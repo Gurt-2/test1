@@ -1,0 +1,9 @@
+name: Central workflow call
+
+on:
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  call-central-workflow:
+    uses: Gurt-2/central-workflows/.github/workflows/main-workflow.yml@main
